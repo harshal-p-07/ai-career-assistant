@@ -15,7 +15,18 @@ const app = express();
 
 if (!fs.existsSync("uploads")) fs.mkdirSync("uploads");
 
-app.use(cors({ origin: process.env.CLIENT_URL || "http://localhost:5173" }));
+app.use(cors({
+  origin: function(origin, callback) {
+    if (!origin || 
+        origin.includes('vercel.app') || 
+        origin.includes('localhost')) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+}));
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
