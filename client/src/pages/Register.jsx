@@ -39,7 +39,7 @@ export default function Register() {
           <div>
             <label className="text-sm text-muted-foreground mb-1.5 block">Full Name</label>
             <input
-              placeholder="Harshal Patil" value={form.name}
+              placeholder="Enter Your Name" value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })} required
               className="w-full px-3 py-2.5 bg-input border border-border rounded-lg text-foreground placeholder-muted-foreground text-sm focus:border-primary transition-colors"
             />
