@@ -24,7 +24,7 @@ jobs:
         run: cd server && npm install
 
       - name: Check syntax
-        run: echo "✅ Backend OK"
+        run: echo "Backend OK"
 
   # ── Job 2: Build Frontend ────────────────────
   build-frontend:
@@ -57,12 +57,12 @@ jobs:
       - name: Build server image
         run: |
           docker build -t career-ai-server ./server
-          echo "✅ Server image built"
+          echo " Server image built"
 
       - name: Build client image
         run: |
           docker build -t career-ai-client ./client
-          echo "✅ Client image built"
+          echo " Client image built"
 
   # ── Job 4: Deploy to Render ──────────────────
   deploy:
@@ -73,5 +73,5 @@ jobs:
     steps:
       - name: Trigger Render Deploy
         run: |
-          curl -X POST ${{ secrets.https://api.render.com/deploy/srv-d8v2dp3tqb8s73f421dg?key=d6LlVDQAK4k}}
-          echo "✅ Deployment triggered"
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK}}
+          echo " Deployment triggered"
