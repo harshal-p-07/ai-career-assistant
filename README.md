@@ -1,4 +1,4 @@
-# ⚡ AI Career Assistant — Phase 1
+#  AI Career Assistant — Phase 1
 
 > AI-powered Resume Analyzer with ATS scoring, skill gap analysis, and personalized improvement suggestions.
 
@@ -6,7 +6,7 @@ Built with: **React + Node.js + Express + MongoDB + Gemini/Groq AI**
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone / open the project
 ```
@@ -55,7 +55,7 @@ App runs on: http://localhost:5173
 
 ---
 
-## 🔑 Getting Free API Keys
+##  Getting Free API Keys
 
 | Service | Link | Free Limit |
 |---------|------|------------|
@@ -65,7 +65,7 @@ App runs on: http://localhost:5173
 
 ---
 
-## 🔄 Switching Between Gemini and Groq
+##  Switching Between Gemini and Groq
 
 Just change ONE line in `server/.env`:
 
@@ -78,7 +78,7 @@ Restart server. That's it. No code changes needed.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 server/
@@ -113,7 +113,7 @@ client/
 
 ---
 
-## 🔌 API Endpoints
+##  API Endpoints
 
 | Method | Route | Auth | Description |
 |--------|-------|------|-------------|
@@ -126,7 +126,7 @@ client/
 
 ---
 
-## 🗺️ What's Next (Phase 2)
+##  What's Next (Phase 2)
 
 - [ ] Deep Research Agent (Serper API + web search)
 - [ ] LangGraph memory (remembers past resumes)
